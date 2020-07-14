@@ -46,40 +46,11 @@
   </entry>
   
   <entry>
-    <title>Node.js 的安装教程</title>
-    <link href="http://yoursite.com/2020/06/22/Node-js-%E7%9A%84%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
-    <id>http://yoursite.com/2020/06/22/Node-js-%E7%9A%84%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
-    <published>2020-06-22T03:45:29.000Z</published>
-    <updated>2020-07-13T10:42:46.641Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网下载 | 镜像下载</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>双击下一步安装</p><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>cmd</p><h2 id="B站视频"><a href="#B站视频" class="headerlink" title="B站视频"></a>B站视频</h2><iframe src="//player.bilibili.com/player.html?aid=38249542&cid=67264830&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="560" width="1024" quality="high"> </iframe><h2 id="Youtube-视频"><a href="#Youtube-视频" class="headerlink" title="Youtube 视频"></a>Youtube 视频</h2><iframe width="1024" height="560" quality="high" src="https://www.youtube.com/embed/p94SUo-_N-Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="">官网</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;官网下载 | 镜像下载&lt;/p&gt;
-&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装
-      
-    
-    </summary>
-    
-    
-      <category term="分享" scheme="http://yoursite.com/categories/%E5%88%86%E4%BA%AB/"/>
-    
-    
-      <category term="Node.js" scheme="http://yoursite.com/tags/Node-js/"/>
-    
-      <category term="npm" scheme="http://yoursite.com/tags/npm/"/>
-    
-  </entry>
-  
-  <entry>
     <title>我的第一篇博客文章</title>
-    <link href="http://yoursite.com/2020/06/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
-    <id>http://yoursite.com/2020/06/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</id>
-    <published>2020-06-19T08:52:52.000Z</published>
-    <updated>2020-06-22T03:49:53.175Z</updated>
+    <link href="http://yoursite.com/2020/06/19/Node-js%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2020/06/19/Node-js%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
+    <published>2020-06-19T07:30:30.000Z</published>
+    <updated>2020-07-14T11:20:16.015Z</updated>
     
     <content type="html"><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>配置分类</p><hr><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>配置标签</p><hr><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2>]]></content>
     
@@ -105,13 +76,41 @@
   </entry>
   
   <entry>
+    <title>Node.js 的安装教程</title>
+    <link href="http://yoursite.com/2020/06/19/Node-js%E7%9A%84%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2020/06/19/Node-js%E7%9A%84%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
+    <published>2020-06-19T07:30:30.000Z</published>
+    <updated>2020-07-14T11:37:52.108Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><p>官网下载：<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a></p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Node.js%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/nodejs-index.png" alt="Node.js首页"  /><p>一般选择下载左侧的长期支持版本</p><h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><p><strong>1.</strong> 双击安装包</p><p><strong>2.</strong> Next</p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Node.js%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-1.png" alt="install-1"  /><p><strong>3.</strong> 同意协议</p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Node.js%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-2.png" alt="install-2"  /><p><strong>4.</strong> 选择安装位置，建议安装在 D 盘</p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Node.js%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-3.png" alt="install-3"  /><p><strong>5.</strong> 这里运行环境、npm 包管理器、在线文档快捷方式、添加到环境变量四项全部安装</p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Node.js%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-4.png" alt="install-4"  /><p><strong>6.</strong> 不用勾选，直接 Next</p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Node.js%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-5.png" alt="install-5"  /><p><strong>7.</strong> install</p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Node.js%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-6.png" alt="install-6"  /><p><strong>8.</strong> 等待安装完成，安装完成后会有两个组件</p><ul><li>Node.js 本身</li><li>npm 包管理器</li></ul><h2 id="三、验证"><a href="#三、验证" class="headerlink" title="三、验证"></a>三、验证</h2><p>打开 cmd，分别输入 <code>node --version</code> 和 <code>npm --version</code>, 如果正确输出版本号，证明安装成功</p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Node.js%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/res.png" alt="res"  /><h2 id="四、设置依赖包安装路径"><a href="#四、设置依赖包安装路径" class="headerlink" title="四、设置依赖包安装路径"></a>四、设置依赖包安装路径</h2><p><strong>1.</strong> 在 <code>nodejs</code> 安装目录下创建 <code>node_global</code> 以及 <code>node_cache</code> 文件夹</p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Node.js%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/rely-1.png" alt="rely-1"></p><p><strong>2.</strong> 在 <code>nodejs\node_modules\npm</code> 设置 npmrc文件，使用文本文档打开修改里面的配置</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">prefix&#x3D;D:\bProgramSoftware\nodejs\node_global</span><br><span class="line">cache&#x3D;D:\bProgramSoftware\nodejs\node_cache</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Node.js%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/rely-2.png" alt="rely-2"></p><p><strong>3.</strong> 设置环境变量，在 “系统变量” 中新建</p><p>变量名为 <code>NODE_PATH</code>，</p><p>变量值为  <code>D:\bProgramSoftware\nodejs</code>（变量值是自己 node 安装的根目录）</p><p>之后在 “系统变量” 的 path 中新建两个变量 <code>%NODE_PATH%\node_modules</code> 和 <code>%NODE_PATH%\node_global</code><br><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Node.js%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/rely-3.png" alt="rely-3"  /></p><h2 id="五、安装淘宝镜像"><a href="#五、安装淘宝镜像" class="headerlink" title="五、安装淘宝镜像"></a>五、安装淘宝镜像</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;一、下载&quot;&gt;&lt;a href=&quot;#一、下载&quot; class=&quot;headerlink&quot; title=&quot;一、下载&quot;&gt;&lt;/a&gt;一、下载&lt;/h2&gt;&lt;p&gt;官网下载：&lt;a href=&quot;https://nodejs.org/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="安装" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="Node.js" scheme="http://yoursite.com/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Git 的安装教程</title>
     <link href="http://yoursite.com/2020/06/19/Git%E7%9A%84%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
     <id>http://yoursite.com/2020/06/19/Git%E7%9A%84%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
     <published>2020-06-19T06:52:52.000Z</published>
-    <updated>2020-07-14T10:57:46.293Z</updated>
+    <updated>2020-07-14T11:33:44.464Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><p>网址：<a href="https://git-scm.com/" target="_blank" rel="noopener">git 官网</a> 或 <a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">淘宝镜像</a></p><h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><p>1.双击安装程序，点击 Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-1.png" alt="install-1" style="zoom:80%;" /></div><p>2.更改安装路径，建议 D 盘，点击 Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-2.png" alt="install-2" style="zoom:80%;" /></div><p>3.选择安装组件，可以直接 Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-3.png" alt="install-3" style="zoom:80%;" /></div><p>4.直接 Next，创建开始菜单</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-4.png" alt="install-4" style="zoom:80%;" /></div><p>5.选择编辑方式，默认使用 Vim，点击 Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-5.png" alt="install-5" style="zoom:80%;" /></div><p>6.使用方式，三种，默认选择第二种</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-6.png" alt="install-6" style="zoom:80%;" /></div><p>7.选择 OpenSSL 远程连接方式，Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-7.png" alt="install-7" style="zoom:80%;" /></div><p>8.配置换行格式，默认，Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-8.png" alt="install-8" style="zoom:80%;" /></div><p>9.配置终端，默认，Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-9.png" alt="install-9" style="zoom:80%;" /></div><p>10.默认，Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-10.png" alt="install-10" style="zoom:80%;" /></div><p>11.默认配置，Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-11.png" alt="install-11" style="zoom:80%;" /></div><p>12.安装</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-12.png" alt="install-12" style="zoom:80%;" /></div><p>13.安装完成</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-13.png" alt="install-13" style="zoom:80%;" /></div><h2 id="三、验证"><a href="#三、验证" class="headerlink" title="三、验证"></a>三、验证</h2><p>命令行输入 <code>git --version</code></p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/test-1.png" alt="test-1"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><p>网址：<a href="https://git-scm.com/" target="_blank" rel="noopener">git 官网</a> 或 <a href="https://npm.taobao.org/mirrors/git-for-windows/" target="_blank" rel="noopener">淘宝镜像</a></p><h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><p><strong>1.</strong> 双击安装程序，点击 Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-1.png" alt="install-1" style="zoom:80%;" /></div><p><strong>2.</strong> 更改安装路径，建议 D 盘，点击 Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-2.png" alt="install-2" style="zoom:80%;" /></div><p><strong>3.</strong> 选择安装组件，可以直接 Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-3.png" alt="install-3" style="zoom:80%;" /></div><p><strong>4.</strong> 直接 Next，创建开始菜单</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-4.png" alt="install-4" style="zoom:80%;" /></div><p><strong>5.</strong> 选择编辑方式，默认使用 Vim，点击 Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-5.png" alt="install-5" style="zoom:80%;" /></div><p><strong>6.</strong> 使用方式，三种，默认选择第二种</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-6.png" alt="install-6" style="zoom:80%;" /></div><p><strong>7.</strong> 选择 OpenSSL 远程连接方式，Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-7.png" alt="install-7" style="zoom:80%;" /></div><p><strong>8.</strong> 配置换行格式，默认，Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-8.png" alt="install-8" style="zoom:80%;" /></div><p><strong>9.</strong> 配置终端，默认，Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-9.png" alt="install-9" style="zoom:80%;" /></div><p><strong>10.</strong> 默认，Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-10.png" alt="install-10" style="zoom:80%;" /></div><p><strong>11.</strong> 默认配置，Next</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-11.png" alt="install-11" style="zoom:80%;" /></div><p><strong>12.</strong> 安装</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-12.png" alt="install-12" style="zoom:80%;" /></div><p><strong>13.</strong> 安装完成</p><div align="center"><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-13.png" alt="install-13" style="zoom:80%;" /></div><h2 id="三、验证"><a href="#三、验证" class="headerlink" title="三、验证"></a>三、验证</h2><p>命令行输入 <code>git --version</code></p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/Git%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/test-1.png" alt="test-1"></p>]]></content>
     
     <summary type="html">
     
