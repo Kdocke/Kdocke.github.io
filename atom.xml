@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-14T12:32:09.729Z</updated>
+  <updated>2020-07-16T12:03:10.596Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SlideToShutDown 下滑关机任务栏设置</title>
+    <link href="http://yoursite.com/2020/07/16/SlideToShutDown%E4%B8%8B%E6%BB%91%E5%85%B3%E6%9C%BA%E4%BB%BB%E5%8A%A1%E6%A0%8F%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://yoursite.com/2020/07/16/SlideToShutDown%E4%B8%8B%E6%BB%91%E5%85%B3%E6%9C%BA%E4%BB%BB%E5%8A%A1%E6%A0%8F%E8%AE%BE%E7%BD%AE/</id>
+    <published>2020-07-16T11:55:42.000Z</published>
+    <updated>2020-07-16T12:03:10.596Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用 SlideToShutDown 可以实现下滑关机：</p><h4 id="1-找到-SlideToShutDown-exe-C-Windows-System32"><a href="#1-找到-SlideToShutDown-exe-C-Windows-System32" class="headerlink" title="1. 找到 SlideToShutDown.exe(C:\Windows\System32)"></a>1. 找到 SlideToShutDown.exe(C:\Windows\System32)</h4><h4 id="2-右键，固定到任务栏"><a href="#2-右键，固定到任务栏" class="headerlink" title="2. 右键，固定到任务栏"></a>2. 右键，固定到任务栏</h4><h4 id="3-右键任务栏图标-–-gt-右键-SlideToShutDown-–-gt-属性-–-gt-更改图标-–-gt-选择图标"><a href="#3-右键任务栏图标-–-gt-右键-SlideToShutDown-–-gt-属性-–-gt-更改图标-–-gt-选择图标" class="headerlink" title="3. 右键任务栏图标 –&gt; 右键 SlideToShutDown –&gt; 属性 –&gt; 更改图标 –&gt; 选择图标"></a>3. 右键任务栏图标 –&gt; 右键 SlideToShutDown –&gt; 属性 –&gt; 更改图标 –&gt; 选择图标</h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;使用 SlideToShutDown 可以实现下滑关机：&lt;/p&gt;
+&lt;h4 id=&quot;1-找到-SlideToShutDown-exe-C-Windows-System32&quot;&gt;&lt;a href=&quot;#1-找到-SlideToShutDown-exe-C-Windows-System
+      
+    
+    </summary>
+    
+    
+      <category term="记录" scheme="http://yoursite.com/categories/%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="SlideToShutDown" scheme="http://yoursite.com/tags/SlideToShutDown/"/>
+    
+  </entry>
   
   <entry>
     <title>常见博客框架</title>
