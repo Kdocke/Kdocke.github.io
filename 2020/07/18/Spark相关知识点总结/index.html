@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="Kdocke">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="http://yoursite.com">
+    <!--SEO-->
+
+<meta name="keywords" content="大数据,Spark,总结" />
+
+
+<meta name="description" content="1.Transformation 和 Action 的区别：Transformation 返回值还是一个 RDD。对一个 RDD 进行计算后，变换成另外一个 RDD，然后这个 RDD 又可以进行..." />
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+<title>
+    
+    Spark 相关知识点总结 |
+    
+    Kdocke
+</title>
+
+<link rel="alternate" href="/atom.xml" title="Kdocke" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0.css">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash.css">
+
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    http://snippet.shenliyang.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='Kdocke'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://yoursite.com">
+                        Kdocke</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                主页</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/教程/"><i class="fa "></i>
+                                教程</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/记录/"><i class="fa "></i>
+                                记录</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/散文/"><i class="fa "></i>
+                                散文</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/分享/"><i class="fa "></i>
+                                分享</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/about/"><i class="fa "></i>
+                                关于</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="Spark 相关知识点总结">
+            
+            Spark 相关知识点总结
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a class="category-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            <a class="tag-link" href="/tags/Spark/" rel="tag">Spark</a> <a class="tag-link" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" rel="tag">大数据</a> <a class="tag-link" href="/tags/%E6%80%BB%E7%BB%93/" rel="tag">总结</a>
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2020/07/18</span>
+    </span>
+    
+    
+</div>
+        
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <h1 id="1-Transformation-和-Action-的区别："><a href="#1-Transformation-和-Action-的区别：" class="headerlink" title="1.Transformation 和 Action 的区别："></a>1.Transformation 和 Action 的区别：</h1><p>Transformation 返回值还是一个 RDD。对一个 RDD 进行计算后，变换成另外一个 RDD，然后这个 RDD 又可以进行另外一次转换。且 Transformation 采用的是懒加载策略，即如果只是将 transformation 提交是不会执行计算的，计算只有在 action 被提交的时候才被触发。</p>
+<p>Action 返回值不是一个 RDD。它要么是一个 Scala 的普通集合，要么是一个值，要么是空，最终或返回到 Driver 程序，或把 RDD 写入到文件系统中。即只有当程序遇到 action 算子的时候，才会触发一个 job，真正提交运算到集群中。</p>
+<h1 id="2-Spark-的特点"><a href="#2-Spark-的特点" class="headerlink" title="2. Spark 的特点"></a>2. Spark 的特点</h1><p>快速、简洁易用、通用、多种运行模式</p>
+<h1 id="3-SparkContext-的特点"><a href="#3-SparkContext-的特点" class="headerlink" title="3. SparkContext 的特点"></a>3. SparkContext 的特点</h1><ul>
+<li><p>Spark 的程序编写时基于 SparkContext 的，具体包括两方面:<br>Spark 编程的核心基础 –RDD，是由 SparkContext 来最初创建（第一个 RDD 一定是由 SparkContext 来创建的）；<br>Spark 程序的调度优化优势基于 SparkContext；</p>
+</li>
+<li><p>Spark 程序的注册是通过 SparkContext 实例化的时候产生的对象来完成的（其实是 SchedulerBackend 来注册程序）</p>
+</li>
+<li><p>Spark 程序运行的时候通过 Cluster Manager 获取具体的计算资源，计算资源的获取也是通过 SparkContext 产生的对象来申请的<br>(其实是 SchedulerBackend 来获取计算资源的）;</p>
+</li>
+<li><p>sparkContext 崩溃或者结束的时候整个 Spark 程序也就结束。</p>
+</li>
+</ul>
+<h1 id="4-SparkSQL-的特点"><a href="#4-SparkSQL-的特点" class="headerlink" title="4. SparkSQL 的特点"></a>4. SparkSQL 的特点</h1><ul>
+<li>支持多种数据源：Hive、RDD、Parquet、JSON、JDBC等。</li>
+<li>多种性能优化技术：in-memory columnar storage、byte-code generation、cost model动态评估等。</li>
+<li>组件扩展性：对于SQL的语法解析器、分析器以及优化器，用户都可以自己重新开发，并且动态扩展。</li>
+</ul>
+<h1 id="5-窄依赖宽依赖"><a href="#5-窄依赖宽依赖" class="headerlink" title="5. 窄依赖宽依赖"></a>5. 窄依赖宽依赖</h1><p>窄依赖：英文全名：NarrowDpendency，简单的说，就是一个RDD对他的父RDD只有简单的一对一依赖关系。就是说，RDD的每个partition，仅仅依赖父RDD的其中的一个partition。父RDD和子RDD之间的关系比较单一，是一对一的。</p>
+<p>宽依赖：英文全名，ShuffleDependency，本质如其名，就是shuffle，也就是说每个父RDD中的parttion中的数据，都可能会传输一部分，到下一个RDD的每一个partition中，此时就会出现，父RDD和子RDD的partion之间具有交互错综复杂的关系，那么这种情况，就叫做两个RDD之间的宽依赖，同时注意到的是，他们之间发生的操作叫做Sheufle。</p>
+<h1 id="6-共享变量"><a href="#6-共享变量" class="headerlink" title="6. 共享变量"></a>6. 共享变量</h1><p>Spark一个非常重要的特性就是共享变量。</p>
+<p>默认情况下，如果在一个算子的函数中使用到了某个外部的变量，那么这个变量的值会被拷贝到每个task中。此时每个 task只能操作自己的那份变量副本。如果多个task想要共享某个变量，那么这种方式是做不到的。</p>
+<p>Spark为此提供了两种共享变量，一种是 Broadcast Variable（广播变量），另一种是 Accumulator（累加变 量）。Broadcast Variable 会将使用到的变量，仅仅为每个节点拷贝一份，更大的用处是优化性能，减少网络传输 以及内存消耗。Accumulator 则可以让多个 task 共同操作一份变量，主要可以进行累加操作</p>
+<h1 id="7-RDD-持久化策略"><a href="#7-RDD-持久化策略" class="headerlink" title="7. RDD 持久化策略"></a>7. RDD 持久化策略</h1><p><strong>常用的持久化策略：</strong></p>
+<ul>
+<li><strong>MEMORY_ONLY：</strong>以非序列化的java对象的方式持久化到JVM的内存中；如果内存不足，那么那些没有持久化的partition就会在下一次需要使用的时候被重新计算</li>
+<li><strong>MEMORY_AND_DISK：</strong>同上，但是某些partitions无法存储在内存中时，会持久化到磁盘，下次使用这些partitions是需要从磁盘读取</li>
+<li><strong>MEMORY_ONLY_SER：</strong>同MEMORY_ONLY，但是会使用Java序列化方式，将Java对象序列化进行持久化，可以减少内存开销，但是需要进行反序列化，因袭会加大cpu的开销</li>
+<li><strong>MEMORY_AND_DISK_SER：</strong>同上</li>
+<li><strong>DISK_ONLY：</strong>以非序列化的java对象的方式持久化，完全存储在磁盘上</li>
+<li><strong>MEMORY_ONLY_2，DISK_ONLY_2：</strong>如果尾部加了2的持久化级别，表示会将持久化数据复用一份，保保存到其他的节点中，从而在数据丢失时，不需要再次计算，只需要使用备份数据即可</li>
+</ul>
+<p><strong>如何选择RDD的持久化策略：</strong></p>
+<ul>
+<li>优先使用MEMORY_ONLY</li>
+<li>使用MEMORY_ONLY，内存不够，使用MEMORY_ONLY_SER</li>
+<li>数据比较重要，时间紧，建议使用带2的后缀的持久化策略</li>
+<li>能不使用DISK相关的策略就不使用（视情况而定）</li>
+</ul>
+<h1 id="8-Spark-常用术语解释"><a href="#8-Spark-常用术语解释" class="headerlink" title="8. Spark 常用术语解释"></a>8. Spark 常用术语解释</h1><ul>
+<li><p><strong>Application：</strong> Appliction的概念和　hadoopMR　中的有些相似，都是指用户编写的 Spark 应用程序，其中包括一个 Driver 功能的代码和分布在集群中多个节点上运行的 Executor 代码。 </p>
+</li>
+<li><p>Driver 使用 Driver 这一个概念的分布式框架很多，比如 hive 等，Spark 中的 Driver 即运行上述 Application的 main 函数并创建 SparkContext，创建 SparkContext 的目的是为了准备 Spark 应用程序的运行环境，在Spark 中有 SparkContext 负责与 ClusterManager 通信，进行资源申请、任务的分配和监控等，当 Executor部分运行完毕后， Driver 同时负责将 SparkContext 关闭，通常用 SparkContext 代表 Driver。</p>
+</li>
+<li><p><strong>Executor：</strong> 某个 Application 运行在 worker 节点上的一个进程， 该进程负责运行某些 Task， 并且负责将数据存到内存或磁盘上，每个 Application 都有各自独立的一批 Executor， 在 Spark on Yarn 模式下，其进程名称为 CoarseGrainedExecutor Backend，类似与 hadoop MR 中的 YarnChild。一个CoarseGrainedExecutor Backend 有且仅有一个 Executor 对象， 负责将 Task 包装成 taskRunner, 并从线程池中抽取一个空闲线程运行 Task， 这个每一 个 CoarseGrainedExecutor Backend 能并行运行 Task 的数量取决与分配给它的 cpu 个数。</p>
+</li>
+<li><p><strong>Cluter Manager：</strong>指的是在集群上获取资源的外部服务。目前有三种类型</p>
+<ul>
+<li>Standalon : spark原生的资源管 理，由Master负责资源的分配，可以在EC2上运行 </li>
+<li>Apache Mesos:与hadoop MR兼容性良好的一种资源调度框 架。</li>
+<li>Hadoop Yarn: 主要是指Yarn中的ResourceManager。</li>
+</ul>
+</li>
+<li><p><strong>Worker:</strong> Worker 集群中任何可以运行 Application 代码的节点，类似与 Yarn 中的 NodeManager 节点， 在Standalone 模式 中指的是通过 slave 文件配置的 Worker 节点，在 Spark on Yarn 模式下就是 NoteManager 节点。 </p>
+</li>
+<li><p><strong>Task:</strong> 被送到某个 Executor上 的工作单元，但 hadoopMR 中的 MapTask 和 ReduceTask 概念一样，是运行 Application 的基本单位，多个 Task 组成一个 Stage，而 Task 的调度和管理等是由 TaskScheduler 负责。</p>
+</li>
+<li><p><strong>Job：</strong> 包含多个 Task 组成的并行计算，往往由 Spark Action 触发生成， 一个 Application 中往往会产生多个Job。 </p>
+</li>
+<li><p><strong>Stage：</strong> 每个 Job 会被拆分成多组 Task， 作为一个 TaskSet， 其名称为 Stage，Stage 的划分和调度是有 DAGScheduler 来负责的，Stage 有非最终的 Stage（Shuﬄe Map Stage）和最终的 Stage（Result Stage）两种， Stage 的边界就是发生 shuﬄe 的地方。 </p>
+</li>
+<li><p><strong>RDD：</strong> Spark 的基本计算单元，可以通过一系列算子进行计算（主要由 Transformation 和 Action 操作），同时 RDD 是 Spark 最核心的东西，他表示已被分区、被序列化的、不可变的、有容错的并且能够被并行操作的数据集合。其 存储级别可以是内存，也可以是磁盘，可通过 spark.storage.StoragerLevel 属性来配置。</p>
+</li>
+<li><p><strong>共享变量：</strong> 在 Spark Application 运行期间，可能需要一些共享变量， 提供给 Task 或 Driver 使用，Spark 提供了两种共享变量，一个可以缓存到各个节点的广播变量；另一种是只支持加法操作，可以实现求和的累加变量。</p>
+</li>
+<li><p><strong>宽依赖：</strong> 或称为为 ShuﬄeDependency，与 Hadoop MR 的 Shuﬄe 的数据依赖相似，宽依赖需要计算所有父 RDD 对应分区的数据，然后在节点之间进行 shuﬄe。 </p>
+</li>
+<li><p><strong>窄依赖：</strong> 或称为 NarrowDependency， 某个具体的 RDD，其分区 partition a 最多子 Rdd 中一个分区partition b依 赖，此种情况只有 Map 任务， 是不需要发送 shuﬄe 过程的， 窄依赖又分为 1:1 和 N:1 两种。</p>
+</li>
+<li><p><strong>DAGScheduler：</strong> 根据 Job 构建基于 Stage 的 DAG，并提交 Stage 给 TASkScheduler。 其划分 Stage 的依据是 RDD 之间的依赖的关系。</p>
+</li>
+<li><p><strong>TASKSedulter：</strong> 将 TaskSet 提交给 worker 运行，每个 Executor 运行什么 Task 就是在此处分配的。 </p>
+</li>
+</ul>
+<p>参考：<a href="https://www.cnblogs.com/superhedantou/p/5699201.html" target="_blank" rel="noopener">https://www.cnblogs.com/superhedantou/p/5699201.html</a></p>
+
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+            转载声明：
+            商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Kdocke</a>
+            
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+    
+    <a href="/2020/07/17/Spark%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8BRDD/" class="next-post btn btn-default" title='Spark 学习笔记之 RDD'>
+        <span class="hidden-lg">下一篇</span>
+        <span class="hidden-xs">
+            Spark 学习笔记之 RDD</span><i class="fa fa-angle-right fa-fw"></i>
+    </a>
+    
+</div>
+
+<div id="comments">
+    
+
+<div id="vcomments" class="valine"></div>
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+<script>
+new Valine({
+    av: AV,
+    el: '#vcomments',
+    appId: 'aKPOlV9P3OhFhLHTQasU7dNy-gzGzoHsz',
+    appKey: 'gIhefzuBgFzwceTzzGrlizob',
+    placeholder: '说点什么吧',
+    notify: false,
+    verify: false,
+    avatar: 'wavatar',
+    meta: 'nick,mail'.split(','),
+    pageSize: '10',
+    path: window.location.pathname,
+    lang: 'zh-CN'.toLowerCase()
+})
+</script>
+
+
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Transformation-和-Action-的区别："><span class="toc-text">1.Transformation 和 Action 的区别：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Spark-的特点"><span class="toc-text">2. Spark 的特点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-SparkContext-的特点"><span class="toc-text">3. SparkContext 的特点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-SparkSQL-的特点"><span class="toc-text">4. SparkSQL 的特点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-窄依赖宽依赖"><span class="toc-text">5. 窄依赖宽依赖</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-共享变量"><span class="toc-text">6. 共享变量</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7-RDD-持久化策略"><span class="toc-text">7. RDD 持久化策略</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8-Spark-常用术语解释"><span class="toc-text">8. Spark 常用术语解释</span></a></li></ol>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2017
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/js/app.js?rev=@@hash.js"></script>
+
+</body>
+</html>
