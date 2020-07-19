@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-18T11:59:18.221Z</updated>
+  <updated>2020-07-19T11:28:24.550Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WebStorm 2020 安装教程</title>
+    <link href="http://yoursite.com/2020/07/19/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2020/07/19/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
+    <published>2020-07-19T11:14:46.000Z</published>
+    <updated>2020-07-19T11:28:24.550Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><p><strong>官方网站：</strong> <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">WebStorm-2020.1.3</a></p><p><strong>注册插件：</strong> 链接：<a href="https://pan.baidu.com/s/1p2wInphLxzxM8DoHfA1OMA" target="_blank" rel="noopener">https://pan.baidu.com/s/1p2wInphLxzxM8DoHfA1OMA</a> 提取码：zhlz</p><h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><p>1.双击 <code>WebStorm-2020.1.3.exe</code> 安装文件，跳出欢迎界面，Next</p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-1.png" alt="install-1"></p><p>2.选择安装位置，建议非 C 盘，Next</p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-2.png" alt="install-2"></p><p>3.直接 Next</p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-3.png" alt="install-3"></p><p>4.Install</p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-4.png" alt="install-4"></p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-5.png" alt="install-5"></p><p>5.运行 WebStorm</p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/install-6.png" alt="install-6"></p><h2 id="三、注册"><a href="#三、注册" class="headerlink" title="三、注册"></a>三、注册</h2><p>1.打开 WebStorm，不导入设置</p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/licensee-1.png" alt="licensee-1"></p><p>2.选择主题，Next</p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/licensee-2.png" alt="licensee-2"></p><p>3.Start using WebStorm</p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/licensee-3.png" alt="licensee-3"></p><p>4.选择免费试用30天</p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/licensee-4.png" alt="licensee-4"></p><p>5.选择 Configure 下的 Plugins，选择从硬盘安装插件</p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/licensee-5.png" alt="licensee-5"></p><p>6.选择下载的插件 <code>jetbrains-agent.jar</code>，重启 WebStorm</p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/licensee-6.png" alt="licensee-6"></p><p>7.激活方式为 <code>Activation code</code>,点击为 WebStorm 安装，确定重启 WebStorm,即可激活成功</p><p><img src="https://raw.githubusercontent.com/Kdocke/MyDocumentImg/master/MyKnowledgeBase/Tutorial/WebStorm2020%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/licensee-7.png" alt="licensee-7"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;一、下载&quot;&gt;&lt;a href=&quot;#一、下载&quot; class=&quot;headerlink&quot; title=&quot;一、下载&quot;&gt;&lt;/a&gt;一、下载&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;官方网站：&lt;/strong&gt; &lt;a href=&quot;https://www.jetbrains.com/webs
+      
+    
+    </summary>
+    
+    
+      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="WebStorm" scheme="http://yoursite.com/tags/WebStorm/"/>
+    
+      <category term="开发工具" scheme="http://yoursite.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>Spark 相关知识点总结</title>
@@ -108,9 +136,9 @@
     <link href="http://yoursite.com/2020/07/14/%E5%B8%B8%E8%A7%81%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/"/>
     <id>http://yoursite.com/2020/07/14/%E5%B8%B8%E8%A7%81%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/</id>
     <published>2020-07-14T11:57:02.000Z</published>
-    <updated>2020-07-14T12:32:09.729Z</updated>
+    <updated>2020-07-18T12:35:29.511Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="一、动态博客"><a href="#一、动态博客" class="headerlink" title="一、动态博客"></a>一、动态博客</h2><h3 id="1、自建"><a href="#1、自建" class="headerlink" title="1、自建"></a>1、自建</h3><p>前端（Thymeleaf…），后端（SpringBoot、MySQL……），登录注册</p><p>优点：更加灵活，易于管理</p><p>缺点：需要懂前前后端开发技术，且需要个人服务器</p><h3 id="2、wordpress"><a href="#2、wordpress" class="headerlink" title="2、wordpress"></a>2、wordpress</h3><p>网址：<a href="https://wordpress.org" target="_blank" rel="noopener">worepress</a></p><p>优点：开源，方便</p><h2 id="二、静态博客"><a href="#二、静态博客" class="headerlink" title="二、静态博客"></a>二、静态博客</h2><h3 id="1、hexo"><a href="#1、hexo" class="headerlink" title="1、hexo"></a>1、hexo</h3><p>网址：<a href="https://hexo.io" target="_blank" rel="noopener">hexo</a></p><p>优点，快速，简洁，高效，一键部署，可以部署到 GitHub、Gitte 等</p><p>搭建教程: <a href="https://kdocke.github.io/2020/06/19/使用Hexo搭建个人博客" target="_blank" rel="noopener">使用 Hexo 搭建个人博客</a></p><h3 id="2、jekyllrb"><a href="#2、jekyllrb" class="headerlink" title="2、jekyllrb"></a>2、jekyllrb</h3><p>网址：<a href="https://jekyllrb.com" target="_blank" rel="noopener">jekyllrb</a></p><p>优点：，类似于hexo</p><h3 id="3、hugo"><a href="#3、hugo" class="headerlink" title="3、hugo"></a>3、hugo</h3><p>网址：<a href="https://www.gohugo.org" target="_blank" rel="noopener">hugo</a></p><p>优点：go语言实现，安装简单，皮肤酷炫</p><h3 id="4、vuepress"><a href="#4、vuepress" class="headerlink" title="4、vuepress"></a>4、vuepress</h3><p>网址：<a href="https://vuepress.vuejs.org" target="_blank" rel="noopener">vuepress</a></p><p>优点：新出，快速</p><h3 id="5、solo"><a href="#5、solo" class="headerlink" title="5、solo"></a>5、solo</h3><p>网址：<a href="https://solo.b3log.org" target="_blank" rel="noopener">solo</a></p><p>jdk支持</p><p>优点：新出</p><h2 id="三、参考"><a href="#三、参考" class="headerlink" title="三、参考"></a>三、参考</h2><blockquote><p><a href="https://youtu.be/erKYtw4Rfhk" target="_blank" rel="noopener">CodeSheep程序羊 Youtube 视频教程</a></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="一、动态博客"><a href="#一、动态博客" class="headerlink" title="一、动态博客"></a>一、动态博客</h2><h3 id="1、自建"><a href="#1、自建" class="headerlink" title="1、自建"></a>1、自建</h3><p>前端（Thymeleaf…），后端（SpringBoot、MySQL……），登录注册</p><p>优点：更加灵活，易于管理</p><p>缺点：需要懂前前后端开发技术，且需要个人服务器</p><h3 id="2、wordpress"><a href="#2、wordpress" class="headerlink" title="2、wordpress"></a>2、wordpress</h3><p>网址：<a href="https://wordpress.org" target="_blank" rel="noopener">worepress</a></p><p>优点：开源，方便</p><h2 id="二、静态博客"><a href="#二、静态博客" class="headerlink" title="二、静态博客"></a>二、静态博客</h2><h3 id="1、hexo"><a href="#1、hexo" class="headerlink" title="1、hexo"></a>1、hexo</h3><p>网址：<a href="https://hexo.io" target="_blank" rel="noopener">hexo</a></p><p>优点，快速，简洁，高效，一键部署，可以部署到 GitHub、Gitte 等</p><p>搭建教程: <a href="https://kdocke.github.io/2020/06/19/使用Hexo搭建个人博客" target="_blank" rel="noopener">使用 Hexo 搭建个人博客</a></p><h3 id="2、jekyllrb"><a href="#2、jekyllrb" class="headerlink" title="2、jekyllrb"></a>2、jekyllrb</h3><p>网址：<a href="https://jekyllrb.com" target="_blank" rel="noopener">jekyllrb</a></p><p>优点：类似于hexo</p><h3 id="3、hugo"><a href="#3、hugo" class="headerlink" title="3、hugo"></a>3、hugo</h3><p>网址：<a href="https://www.gohugo.org" target="_blank" rel="noopener">hugo</a></p><p>优点：go语言实现，安装简单，皮肤酷炫</p><h3 id="4、vuepress"><a href="#4、vuepress" class="headerlink" title="4、vuepress"></a>4、vuepress</h3><p>网址：<a href="https://vuepress.vuejs.org" target="_blank" rel="noopener">vuepress</a></p><p>优点：新出，快速</p><h3 id="5、solo"><a href="#5、solo" class="headerlink" title="5、solo"></a>5、solo</h3><p>网址：<a href="https://solo.b3log.org" target="_blank" rel="noopener">solo</a></p><p>jdk支持</p><p>优点：新出</p><h2 id="三、参考"><a href="#三、参考" class="headerlink" title="三、参考"></a>三、参考</h2><blockquote><p><a href="https://youtu.be/erKYtw4Rfhk" target="_blank" rel="noopener">CodeSheep程序羊 Youtube 视频教程</a></p></blockquote>]]></content>
     
     <summary type="html">
     
